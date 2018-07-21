@@ -84,6 +84,10 @@ div.lists {
 }
 
 @media only screen and (max-width: 400px) {
+  header {
+    max-height: 3.5rem;
+  }
+
   header > h1{
     font-size: 28px;
   }
@@ -94,5 +98,27 @@ div.lists {
 
   main > article > div.lists {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  header > h1 {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header > h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  header > h1 {
+    font-size: 23px;
+  }
+
+  header > nav > a > img {
+    width: 32px;
   }
 }
