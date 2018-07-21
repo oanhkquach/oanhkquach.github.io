@@ -1,3 +1,3 @@
 # oanhkquach.github.io
 
-A website to show my hobbies :)
+A website about me :)
