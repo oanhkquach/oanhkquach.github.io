@@ -11,7 +11,7 @@ div.wrapper {
   color: #e6677c;
 }
 
-div > * {
+div>* {
   padding: 10px;
 }
 
@@ -27,12 +27,17 @@ nav {
   position: absolute;
 }
 
-nav > a {
+nav>a {
   text-decoration: none;
 }
 
-nav > a > img {
+nav>a>img {
   border-radius: 10px;
+}
+
+nav>a>img:hover {
+  -webkit-filter: contrast(140%);
+  filter: contrast(140%);
 }
 
 main {
@@ -66,59 +71,60 @@ div.lists {
 }
 
 .list:hover {
-  background-color: #f8d6d6;
-  cursor: url(../images/heart.cur), pointer;
+  background-color: rgb(255, 206, 214);
 }
 
-.list > summary {
+.list>summary {
   font-size: 24px;
 }
 
-.list > ul {
+.list>ul {
   padding-top: 10px;
   text-align: left;
 }
 
-.list > ul > li {
+.list>ul>li {
   list-style-type: square;
+}
+
+a:hover,
+h1:hover,
+.list:hover {
+  cursor: url(../images/heart.cur), pointer;
 }
 
 @media only screen and (max-width: 400px) {
   header {
     max-height: 3.5rem;
   }
-
-  header > h1{
+  header>h1 {
     font-size: 28px;
   }
-
-  header > nav > a > img {
+  header>nav>a>img {
     width: 35px;
   }
-
-  main > article > div.lists {
+  main>article>div.lists {
     display: block;
   }
 }
 
 @media only screen and (max-width: 340px) {
-  header > h1 {
+  header>h1 {
     font-size: 27px;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  header > h1 {
+  header>h1 {
     font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 310px) {
-  header > h1 {
+  header>h1 {
     font-size: 23px;
   }
-
-  header > nav > a > img {
+  header>nav>a>img {
     width: 32px;
   }
 }
