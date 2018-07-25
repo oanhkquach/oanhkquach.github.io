@@ -93,7 +93,7 @@ h1:hover,
   cursor: url(../images/heart.cur), pointer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
   header {
     max-height: 3.5rem;
   }
@@ -101,7 +101,7 @@ h1:hover,
     font-size: 28px;
   }
   header>nav>a>img {
-    width: 35px;
+    width: 36px;
   }
   main>article>div.lists {
     display: block;
@@ -112,17 +112,32 @@ h1:hover,
   header>h1 {
     font-size: 27px;
   }
+  header>nav>a>img {
+    width: 35px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  header>h1 {
+    font-size: 26px;
+  }
+  header>nav>a>img {
+    width: 34px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   header>h1 {
     font-size: 25px;
   }
+  header>nav>a>img {
+    width: 33px;
+  }
 }
 
 @media only screen and (max-width: 310px) {
   header>h1 {
-    font-size: 23px;
+    font-size: 24px;
   }
   header>nav>a>img {
     width: 32px;
