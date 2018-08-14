@@ -1,3 +1,12 @@
+/**
+ * Copyright (c) 2018 Eric Nguyen
+ * License: MIT 
+ **/
+
+/**************
+*** GENERAL ***
+**************/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +16,24 @@ body {
   background-color: #ffc0cb;
 }
 
-div.wrapper {
-  color: #e6677c;
-}
-
-div>* {
+body>* {
   padding: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(189, 69, 105);
+}
+
+a:hover,
+h1:hover,
+details:hover {
+  cursor: url(../images/heart.cur), pointer;
+}
+
+/**************
+*** HEADER ****
+**************/
 
 header {
   background-color: #d16a7c;
@@ -27,10 +47,6 @@ nav {
   position: absolute;
 }
 
-nav>a {
-  text-decoration: none;
-}
-
 nav>a>img {
   border-radius: 10px;
 }
@@ -40,8 +56,46 @@ nav>a>img:hover {
   filter: contrast(140%);
 }
 
+/**************
+**** MAIN *****
+**************/
+
 main {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #e6677c;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 10px;
+}
+
+details {
+  border: 2px solid #d16a7c;
+  min-width: 12rem;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.25s ease;
+}
+
+details:hover {
+  background-color: rgb(255, 206, 214);
+}
+
+details>summary {
+  font-size: 24px;
+}
+
+details>ul {
+  padding-top: 10px;
+}
+
+details>ul>li {
+  list-style-type: square;
 }
 
 table {
@@ -54,46 +108,7 @@ th {
   padding: 5px;
 }
 
-section {
-  padding: 10px;
-}
-
-div.lists {
-  display: flex;
-}
-
-.list {
-  border: 2px solid #d16a7c;
-  min-width: 10rem;
-  width: auto;
-  padding: 1rem;
-  transition: all 0.25s ease;
-}
-
-.list:hover {
-  background-color: rgb(255, 206, 214);
-}
-
-.list>summary {
-  font-size: 24px;
-}
-
-.list>ul {
-  padding-top: 10px;
-  text-align: left;
-}
-
-.list>ul>li {
-  list-style-type: square;
-}
-
-a:hover,
-h1:hover,
-.list:hover {
-  cursor: url(../images/heart.cur), pointer;
-}
-
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 450px) {
   header {
     max-height: 3.5rem;
   }
@@ -103,7 +118,7 @@ h1:hover,
   header>nav>a>img {
     width: 36px;
   }
-  main>article>div.lists {
+  article {
     display: block;
   }
 }
