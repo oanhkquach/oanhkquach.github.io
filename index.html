@@ -9,94 +9,115 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Oanh's Website</title>
-  <meta name="description" content="">
+  <title>Oanh K. Quach's Website</title>
+  <meta name="description" content="Oanh K. Quach's personal website listing various things about her, including her hobbies, sports, and favorite things.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./styles/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="wrapper">
-    <header>
-      <h1>Oanh K. Quach</h1>
-      <nav>
-        <a href="https://github.com/oanhkquach" target="_blank">
-          <img src="./images/github.svg" alt="Github link" width="40">
-        </a>
-        <a href="https://fb.me/oanh.kieu.923171" target="_blank">
-          <img src="./images/facebook.svg" alt="Facebook link" width="40">
-        </a>
-        <a href="https://instagr.am/2uach_o" target="_blank">
-          <img src="./images/instagram.svg" alt="Instagram link" width="40">
-        </a>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <!-- Welcome message -->
-        <section>
-          <p>
-            Welcome to my website!
-          </p>
-        </section>
-        <!-- Lists about me -->
-        <div class="lists">
-          <section>
-            <details class="list">
-              <summary>
-                Hobbies
-              </summary>
-              <ul>
-                <li>Tennis</li>
-                <li>Golf</li>
-                <li>Nap</li>
-                <li>Cooking</li>
-                <li>Facebook</li>
-                <li>Coding</li>
-              </ul>
-            </details>
-          </section>
-          <section>
-            <details class="list">
-              <summary>
-                Favorites
-              </summary>
-              <br>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Category</th>
-                    <th>Item</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sport</td>
-                    <td>Tennis</td>
-                  </tr>
-                  <tr>
-                    <td>Video Game</td>
-                    <td>
-                      <i>League of Legends</i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Movie</td>
-                    <td>
-                      <i>Kingsman: The Secret Service</i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </details>
-          </section>
-        </div>
-      </article>
-    </main>
-  </div>
+  <header>
+    <h1>Oanh K. Quach</h1>
+    <nav>
+      <a href="https://github.com/oanhkquach">
+        <img src="./images/github.svg" alt="Github link" width="40">
+      </a>
+      <a href="https://fb.me/oanh.kieu.923171">
+        <img src="./images/facebook.svg" alt="Facebook link" width="40">
+      </a>
+      <a href="https://instagr.am/2uach_o">
+        <img src="./images/instagram.svg" alt="Instagram link" width="40">
+      </a>
+    </nav>
+  </header>
+  <main>
+    <article id="welcome">
+      <section>
+        <p>
+          <b>Welcome to my website!</b>
+        </p>
+      </section>
+    </article>
+    <article id="lists">
+      <section>
+        <details class="list">
+          <summary>
+            Hobbies
+          </summary>
+          <ul>
+            <li>Texting</li>
+            <li>Shopping</li>
+            <li>Napping</li>
+            <li>Cooking</li>
+            <li>Facebook</li>
+            <li>Netflix</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+            <li>Gaming</li>
+          </ul>
+        </details>
+      </section>
+      <section>
+        <details class="list">
+          <summary>
+            Sports
+          </summary>
+          <ul>
+            <li>Tennis</li>
+            <li>Cheerleading</li>
+            <li>Golf</li>
+            <li>Swimming</li>
+          </ul>
+        </details>
+      </section>
+      <section>
+        <details class="list">
+          <summary>
+            Favorites
+          </summary>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sport</td>
+                <td>Tennis</td>
+              </tr>
+              <tr>
+                <td>Video Game</td>
+                <td>
+                  <i>League of Legends</i>
+                </td>
+              </tr>
+              <tr>
+                <td>Movie</td>
+                <td>
+                  <i>Kingsman: The Secret Service</i>
+                </td>
+              </tr>
+              <tr>
+                <td>Restaurant</td>
+                <td>
+                  <a href="http://www.spicecnoodle.com/">
+                    Spice C
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+      </section>
+    </article>
+  </main>
+  <script src="./js/onelist.js" async defer></script>
 </body>
 
 </html>
