@@ -12,11 +12,11 @@
   color: white;
   font-family: 'Asap', sans-serif;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00000080;
   position: fixed;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #happy-bday>h1 {
     margin-top: 45vh;
   }
