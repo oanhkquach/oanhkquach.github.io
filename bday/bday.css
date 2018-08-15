@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Asap|Old+Standard+TT");
-
 * {
   cursor: url(../bday/cake.ani), url(../bday/cake.gif), progress !important;
 }
@@ -16,7 +15,7 @@
   color: white;
   font-family: 'Asap', sans-serif;
   text-align: center;
-  background-color: #00000080;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
 }
 
