@@ -2,7 +2,7 @@ function newPopUp(message) {
   let popUp = document.createElement("div");
   popUp.appendChild(message);
   popUp.id = "happy-bday";
-  popUp.setAttribute("onclick", "popup.style.display = 'none'; document.body.removeChild(confettiHolder);");
+  popUp.setAttribute("onclick", "popUp.style.display = 'none'; document.body.removeChild(confettiHolder);");
   return popUp;
 }
 
