@@ -1,5 +1,6 @@
-function toggle() {
-  overlay.setAttribute("onclick", "popup.style.display = 'none'; confettiHolder.style.display = 'none'");
+function hide() {
+  confettiHolder.setAttribute("style", "display: none");
+  overlay.setAttribute("style", "display: none");
 }
 
 // Confetti
@@ -19,3 +20,5 @@ let name = location.hostname.substr(0, location.hostname.indexOf("."));
 message.innerHTML = "Happy birthday to " + name + "!";
 overlay.appendChild(message);
 document.body.insertBefore(overlay, document.body.firstChild);
+
+document.body.setAttribute("onclick", "hide()");
