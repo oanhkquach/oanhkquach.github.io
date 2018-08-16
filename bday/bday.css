@@ -19,8 +19,6 @@
   position: fixed;
 }
 
-@media only screen and (max-width: 800px) {
-  #happy-bday>h1 {
-    margin-top: 45vh;
-  }
+#happy-bday>h1 {
+  margin-top: 45vh;
 }
