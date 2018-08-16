@@ -25,12 +25,6 @@ a {
   color: rgb(189, 69, 105);
 }
 
-a:hover,
-h1:hover,
-details:hover {
-  cursor: url(../images/heart.cur), pointer;
-}
-
 /**************
 *** HEADER ****
 **************/
