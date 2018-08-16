@@ -33,7 +33,7 @@ main {
 }
 
 * {
-  cursor: url(./images/mycake.cur), progress !important;
+  cursor: url(./images/cake-cursor.cur), progress !important;
 }
 
 #confetti-holder {
