@@ -4,10 +4,9 @@
  **/
 
 @import url("https://fonts.googleapis.com/css?family=Asap|Old+Standard+TT");
-
 /**************
-* ANIMATIONS **
-**************/
+ * ANIMATIONS **
+ **************/
 
 @keyframes fadein {
   from {
@@ -19,8 +18,8 @@
 }
 
 /**************
-**** B-DAY ****
-**************/
+ **** B-DAY ****
+ **************/
 
 body {
   width: 100%;
@@ -34,11 +33,7 @@ main {
 }
 
 * {
-  cursor: url(./images/cake.ani), url(./images/cake.gif), progress !important;
-}
-
-#hobbies:hover {
-  cursor: url(./images/derp-cur.png) !important;
+  cursor: url(./images/mycake.cur), progress !important;
 }
 
 #confetti-holder {
