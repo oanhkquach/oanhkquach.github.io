@@ -8,6 +8,7 @@ function hide() {
   overlay.setAttribute("style", "display: none");
   document.getElementsByTagName("header")[0].style.filter = "none";
   document.getElementsByTagName("main")[0].style.filter = "none";
+  document.getElementById("intro").style.display = "none";
 }
 
 // Confetti

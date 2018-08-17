@@ -4,9 +4,9 @@
  **/
 
 @import url("https://fonts.googleapis.com/css?family=Asap|Old+Standard+TT");
-/**************
- * ANIMATIONS **
- **************/
+/***************
+** ANIMATIONS **
+***************/
 
 @keyframes fadein {
   from {
@@ -17,9 +17,51 @@
   }
 }
 
-/**************
- **** B-DAY ****
- **************/
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/***************
+***** B-DAY ****
+***************/
+
+.fadeout {
+  -webkit-animation: fadeout 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadeout 2s;
+  /* Internet Explorer */
+  -o-animation: fadeout 2s;
+  /* Opera < 12.1 */
+  animation: fadeout 2s;
+}
+
+.fadein {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  opacity: 0;
+}
 
 body {
   width: 100%;
@@ -55,18 +97,8 @@ main {
   font-family: 'Asap', sans-serif;
   text-align: center;
   background-color: rgba(128, 0, 0, 0.774);
-  filter: grayscale(100%);
   position: fixed;
   z-index: 1;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s;
 }
 
 #happy-bday>h1 {
