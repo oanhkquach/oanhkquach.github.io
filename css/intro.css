@@ -4,9 +4,6 @@
  **/
 
 @import url("https://fonts.googleapis.com/css?family=Asap|Old+Standard+TT");
-/***************
-** ANIMATIONS **
-***************/
 
 @keyframes fadein {
   from {
@@ -17,29 +14,13 @@
   }
 }
 
-@keyframes fadeout {
+@keyframes blurout {
   from {
-    opacity: 1;
+    filter: blur(4px);
   }
   to {
-    opacity: 0;
+    filter: blur(0px);
   }
-}
-
-/***************
-***** B-DAY ****
-***************/
-
-.fadeout {
-  -webkit-animation: fadeout 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeout 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadeout 2s;
-  /* Internet Explorer */
-  -o-animation: fadeout 2s;
-  /* Opera < 12.1 */
-  animation: fadeout 2s;
 }
 
 .fadein {
@@ -54,13 +35,16 @@
   animation: fadein 2s;
 }
 
-#intro {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background-color: white;
-  z-index: 1;
-  opacity: 0;
+.blurout {
+  -webkit-animation: blurout 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: blurout 2s;
+  /* Firefox < 16 */
+  -ms-animation: blurout 2s;
+  /* Internet Explorer */
+  -o-animation: blurout 2s;
+  /* Opera < 12.1 */
+  animation: blurout 2s;
 }
 
 body {
@@ -74,20 +58,8 @@ main {
   filter: blur(3px);
 }
 
-* {
-  cursor: url(./images/cake-cursor.cur), progress !important;
-}
-
-#confetti-holder {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  filter: blur(0px);
-  z-index: 2;
-}
-
-#happy-bday {
-  background-image: url(./images/cover.jpg);
+#cover {
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75vh 100vh;
@@ -96,12 +68,12 @@ main {
   color: white;
   font-family: 'Asap', sans-serif;
   text-align: center;
-  background-color: rgba(128, 0, 0, 0.774);
+  background-color: rgba(209, 88, 124, 0.452);
   position: fixed;
   z-index: 1;
 }
 
-#happy-bday>h1 {
+#cover>h1 {
   margin-top: 45vh;
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.39);
 }
